@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E633019672390EF9D01B383 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7E6F089C9FB8AE54CA8B8E /* libPods.a */; };
+		FE8260881B330C4000B77C1D /* CatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8260871B330C4000B77C1D /* CatsTableViewController.swift */; };
 		FEA38BD41B321CCC006C8E04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA38BD31B321CCC006C8E04 /* AppDelegate.swift */; };
 		FEA38BD61B321CCC006C8E04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA38BD51B321CCC006C8E04 /* ViewController.swift */; };
 		FEA38BD91B321CCC006C8E04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA38BD71B321CCC006C8E04 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		1B7E6F089C9FB8AE54CA8B8E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		544903C17FF0D36390A30F8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B1401939B033AA764449A237 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FE8260871B330C4000B77C1D /* CatsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsTableViewController.swift; sourceTree = "<group>"; };
 		FEA38BCE1B321CCC006C8E04 /* Paws.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paws.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA38BD21B321CCC006C8E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEA38BD31B321CCC006C8E04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				FEA38BDC1B321CCC006C8E04 /* LaunchScreen.xib */,
 				FEA38BD11B321CCC006C8E04 /* Supporting Files */,
 				FEC139E11B32201E0027E33E /* Paws-Bridging-Header.h */,
+				FE8260871B330C4000B77C1D /* CatsTableViewController.swift */,
 			);
 			path = Paws;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEA38BD61B321CCC006C8E04 /* ViewController.swift in Sources */,
+				FE8260881B330C4000B77C1D /* CatsTableViewController.swift in Sources */,
 				FEA38BD41B321CCC006C8E04 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
