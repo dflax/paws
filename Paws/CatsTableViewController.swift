@@ -36,6 +36,36 @@ class CatsTableViewController: PFQueryTableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+	override func queryForTable() -> PFQuery {
+
+		var query:PFQuery = PFQuery(className:self.parseClassName!)
+
+		if(objects?.count == 0) {
+			query.cachePolicy = PFCachePolicy.CacheThenNetwork
+		}
+
+		query.orderByAscending("name")
+
+		return query
+	}
+
+	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
+
+		let cellIdentifier:String = "Cell"
+
+		var cell:PFTableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? PFTableViewCell
+
+		if (cell == nil) {
+			cell = PFTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
+		}
+
+		if let pfObject = object {
+			cell?.textLabel?.text = pfObject["name"] as? String
+		}
+
+		return cell
+	}
+
 /*
     // MARK: - Navigation
 
