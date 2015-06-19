@@ -99,6 +99,8 @@ class CatsTableViewController: PFQueryTableViewController {
 			}
 		}
 
+		cell?.parseObject = object
+
 		return cell
 	}
 

@@ -46,12 +46,21 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paw" translatesAutoresizingMaskIntoConstraints="NO" id="YDr-Fj-EPn">
+                        <rect key="frame" x="110" y="110" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="5xb-PH-c8i"/>
+                            <constraint firstAttribute="height" constant="100" id="SA2-YH-uto"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="centerX" secondItem="YDr-Fj-EPn" secondAttribute="centerX" id="G0g-OI-7jR"/>
                     <constraint firstItem="UYY-xx-hep" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="Gnb-hV-1FI"/>
                     <constraint firstItem="2Gd-cU-Nvf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="J2L-t9-rfs"/>
                     <constraint firstAttribute="bottom" secondItem="IZd-Rl-aaP" secondAttribute="bottom" constant="43" id="OEs-3N-Tye"/>
                     <constraint firstItem="2Gd-cU-Nvf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Ycj-fl-QcA"/>
+                    <constraint firstItem="YDr-Fj-EPn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="110" id="d66-fc-j7f"/>
                     <constraint firstAttribute="bottom" secondItem="8jH-tz-WTn" secondAttribute="bottom" constant="11" id="dVm-kf-ojG"/>
                     <constraint firstAttribute="trailing" secondItem="2Gd-cU-Nvf" secondAttribute="trailing" constant="15" id="eWF-VK-so7"/>
                     <constraint firstAttribute="bottom" secondItem="UYY-xx-hep" secondAttribute="bottom" constant="11" id="eWj-FN-c7a"/>
@@ -64,8 +73,12 @@
                 <outlet property="catCreditLabel" destination="IZd-Rl-aaP" id="YLd-bg-YbZ"/>
                 <outlet property="catImageView" destination="2Gd-cU-Nvf" id="02H-SU-TK7"/>
                 <outlet property="catNameLabel" destination="UYY-xx-hep" id="C9Q-Bn-Mw7"/>
+                <outlet property="catPawIcon" destination="YDr-Fj-EPn" id="tb1-Vc-KHt"/>
                 <outlet property="catVotesLabel" destination="8jH-tz-WTn" id="R5T-gF-xzx"/>
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Paw" width="100" height="100"/>
+    </resources>
 </document>
